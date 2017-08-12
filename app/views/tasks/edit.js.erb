@@ -1,0 +1,6 @@
+<%# Find the element with an id attribute of task-form and at that point render the html in the form partial %>
+<%# The ‘j’ is syntactic sugar for  escape_javascript (render 'form')  %>
+
+$('#task-form').html("<%= j (render 'form') %>") 
+$('#task-lists').html("<%=  j  (render 'task_lists') %>")
+$('#task-form').slideDown(350);
